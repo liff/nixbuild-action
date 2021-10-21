@@ -66,6 +66,8 @@ do
   nixbuildnet_env="$nixbuildnet_env NIXBUILDNET_TAG_$tag=$(printenv $tag)"
 done
 
+echo "  SetEnv$nixbuildnet_env"
+
 echo "  SetEnv$nixbuildnet_env" >> "$SSH_CONFIG_FILE"
 
 
